@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/mealFragment"
+    >
+
+    <fragment
+        android:id="@+id/mealFragment"
+        android:name="com.alawiyaa.cookingqw.ui.listMeal.MealFragment"
+        android:label="fragment_meal"
+        tools:layout="@layout/fragment_meal" >
+        <action
+            android:id="@+id/action_mealFragment_to_detailMealFragment"
+            app:destination="@id/detailMealFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailMealFragment"
+        android:name="com.alawiyaa.cookingqw.ui.detailMeal.DetailMealFragment"
+        android:label="fragment_detail_meal"
+        tools:layout="@layout/fragment_detail_meal" >
+        <argument
+            android:name="detailMeal"
+            app:argType="com.alawiyaa.cookingqw.data.Meal" />
+    </fragment>
+</navigation>

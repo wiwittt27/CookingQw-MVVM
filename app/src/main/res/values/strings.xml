@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">CookingQw</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="see_tutorial">See Tutorial</string>
+    <string name="str_area">%1$s Food</string>
 </resources>

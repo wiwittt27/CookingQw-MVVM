@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="18dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title_meal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color_title"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Burger" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_meal_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/text_color_desc"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/tv_title_meal"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_meal"
+        tools:text="@string/str_area" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/label_meal_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Category"
+        android:textColor="@color/text_color_desc"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/tv_meal_type"
+        app:layout_constraintTop_toBottomOf="@id/tv_meal_type"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_meal_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/text_color_desc"
+        android:textSize="16sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toBottomOf="@id/label_meal_category"
+        app:layout_constraintStart_toEndOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="@id/label_meal_category"
+        tools:text="Food"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/label_meal_tags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Tags"
+        android:textColor="@color/text_color_desc"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/label_meal_category"
+        app:layout_constraintTop_toBottomOf="@id/label_meal_category"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_meal_tags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/text_color_desc"
+        android:textSize="16sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toBottomOf="@id/label_meal_tags"
+        app:layout_constraintStart_toEndOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="@id/label_meal_tags"
+        tools:text="Healty, UnHealty"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/label_ingredients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="Ingredients"
+        android:textColor="@color/text_color_title"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/tv_title_meal"
+        app:layout_constraintTop_toBottomOf="@id/label_meal_tags" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_meal_ingredient"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="3dp"
+        android:textColor="@color/text_color_desc"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/label_ingredients"
+        app:layout_constraintTop_toBottomOf="@id/label_ingredients"
+        android:text="Ingredients" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_meal_measure"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:padding="3dp"
+        android:textColor="@color/text_color_desc"
+        android:textSize="16sp"
+
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toBottomOf="@id/tv_meal_ingredient"
+        app:layout_constraintStart_toEndOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="@id/tv_meal_ingredient"
+        tools:text="1/2 Cup"
+/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/label_instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instruction"
+        android:textColor="@color/text_color_title"
+        android:textSize="26sp"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="@id/label_ingredients"
+        app:layout_constraintTop_toBottomOf="@id/tv_meal_ingredient" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_meal_instruction"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@tools:sample/lorem/random"
+        android:textColor="@color/text_color_desc"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/label_instruction"
+        app:layout_constraintTop_toBottomOf="@id/label_instruction"
+
+        />
+
+
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="tv_meal_ingredient"
+        app:barrierDirection="right" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
